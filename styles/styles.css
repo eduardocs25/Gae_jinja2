@@ -3,3 +3,15 @@
 nav, footer, section{text-align:center;margin:20px;}
 
 .productblock {width:45%;height:150px;margin:5px;float:left;}
+
+h2{
+    background-color: dodgerblue;
+}
+
+#interview{
+    background-color: orangered;
+}
+
+.tile{
+    background-color: magenta;
+}
