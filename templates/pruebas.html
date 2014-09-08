@@ -3,11 +3,12 @@
     <head lang="en">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/reset.css">
         <title>Webean | Desarrollo web para emprendedores</title>
     </head>
     <body>
-        <div>
-            <div class="tile">
+        <div id="main-container">
+            <div class="tile green">
                 <h2>Features</h2>
                 <ul>
                     <li><a href="http://www.google.com">Link 1</a></li>
@@ -15,12 +16,12 @@
                     <li><a href="http://www.google.com">Link 1</a></li>
                 </ul>
             </div>
-            <div class="tile" id="interview">
+            <div class="tile yellow" id="interview">
                 <div>Important interview</div>
-                <div>3:00 - 4:00 pm</div>
-                <div>December <span>15</span></div>
+                <div class="event-hour">3:00 - 4:00 pm</div>
+                <div class="event-date">December <span class="event-day">15</span></div>
             </div>
-            <div class="tile">
+            <div class="tile red">
                 <h2>Todo</h2>
                 <ol>
                     <li>Construir websites</li>
@@ -28,12 +29,12 @@
                     <li>Build Games</li>
                 </ol>
             </div>
-            <div class="tile">
+            <div class="tile lightgrey">
                 <img src="img/chart.png" width="100">
-                <div>4800</div>
+                <div class="class-total">4800</div>
             </div>
-            <div class="tile">
-                <table>
+            <div class="tile-double red">
+                <table id="users-table">
                     <thead>
                         <th>User</th>
                         <th>Product</th>
@@ -58,7 +59,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="tile">
+            <div class="tile green">
                 <h2>Order Pizza</h2>
                 <form>
                     <select>
@@ -66,12 +67,12 @@
                         <option>Pizza 2</option>
                         <option>Pizza 3</option>
                     </select>
-                    <input type="number" value="1" /><br/>
-                    <input type="text" placeholder="Comments"/>
+                    <input type="number" value="1"/>
+                    <input type="text" placeholder="Comments" size="12px"/>
                     <button>Order</button>
                 </form>
             </div>
-            <div class="tile">
+            <div class="tile city-image">
                 <div>Santiago</div>
                 <div>36</div>
             </div>
