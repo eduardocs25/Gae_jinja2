@@ -9,6 +9,10 @@ handlers:
   static_files: styles/styles.css
   upload: styles/styles\.css
 
+- url: /img(.*\.(gif|png|jpg|ico|js|css|php|xml))
+  static_files: img\1
+  upload: img(.*\.(gif|png|jpg|ico|js|css|php|xml))
+
 - url: .*
   script: main.app
 

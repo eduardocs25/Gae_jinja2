@@ -40,8 +40,15 @@ class AboutHandler(webapp2.RequestHandler):
         #aqui se renderiza el index
         self.response.write(template.render(template_vars))
 
+class PruebasHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("pruebas.html")
+        #aqui se renderiza el index
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/products.html', ProductsHandler),
     ('/about.html', AboutHandler),
+    ('/pruebas.html', PruebasHandler),
 ], debug=True)
